@@ -1,57 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>7TAO活動訂票網</title>
+</head>
 
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
+<body>
+  <%- include('./layout/header'); -%>
+    <main class="container page-home my-3 mb- mt-sm-4 mb-sm-5">
+      <section class="kvbanner text-white d-flex flex-column justify-content-between">
+        <h2 class="homekv-date">19 MAY 2023</h2>
+        <div class="homekv-event text-center">
+          <h5>隔牆有耳-沒有草東的派對</h5>
+          <p class="mt-3 d-none d-sm-block">你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！
+            帶上啤酒、野餐墊，讓我們在Live House外面一起開場「沒有草東的派對」吧！</p>
+        </div>
+      </section>
+
+
+      <section class="typeBtnArea row my-sm-5 my-3 align-items-strech">
+        <div class="col-4 col-lg-2">
+          <a href="#" class="home-typeBtn border border-2 d-flex flex-column align-items-center">
+            <div class="imgBox"><img
+                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/2023week6/cate01.svg">
+            </div>
+            <h5>演出</h5>
+          </a>
+        </div>
+        <div class="col-4 col-lg-2">
+          <a href="#" class="home-typeBtn border border-2 d-flex flex-column align-items-center">
+            <div class="imgBox"><img
+                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/2023week6/cate02.svg">
+            </div>
+            <h5>聯誼</h5>
+          </a>
+        </div>
+        <div class="col-4 col-lg-2">
+          <a href="#" class="home-typeBtn border border-2 d-flex flex-column align-items-center">
+            <div class="imgBox"><img
+                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/2023week6/cate03.svg">
+            </div>
+            <h5>展覽</h5>
+          </a>
+        </div>
+        <div class="col-4 col-lg-2">
+          <a href="#" class="home-typeBtn border border-2 d-flex flex-column align-items-center">
+            <div class="imgBox"><img
+                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/2023week6/cate04.svg">
+            </div>
+            <h5>美食</h5>
+          </a>
+        </div>
+        <div class="col-4 col-lg-2">
+          <a href="#" class="home-typeBtn border border-2 d-flex flex-column align-items-center">
+            <div class="imgBox"><img
+                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/2023week6/cate05.svg">
+            </div>
+            <h5>戶外</h5>
+          </a>
+        </div>
+        <div class="col-4 col-lg-2 last">
+          <a href="#" class="home-typeBtn border border-2 d-flex flex-column align-items-center justify-content-center">
+            <h3 class="text-primary">探索<br>更多</h3>
+          </a>
+        </div>
+
+      </section>
+
+
+      <div class="card" style="width: 18rem">
+        <img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" />
+        <div class="card-body">
+          <h5 class="card-title">卡片元件</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
+            nobis earum!
+          </p>
+        </div>
       </div>
-    </div>
 
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
+      <!-- Modal 按鈕 -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        打開 modal
+      </button>
 
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+      <!-- Modal 元件 -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">內容</div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+              <button type="button" class="btn btn-primary">確定</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
+    </main>
     <%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+      <script type="module" src="../main.js"></script>
+</body>
+
 </html>

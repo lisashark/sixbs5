@@ -1,4 +1,69 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+header {
+  button {
+    border: 0px;
+    outline: 0px;
+  }
+}
+
+.logo {
+  .imgBox {
+    width: 40px;
+
+    @include media-breakpoint-up(sm) {
+      width: 53px;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {}
+
+
+}
+
+.memberBtnArea>a {
+  font-size: 18px;
+}
+
+.searchBox {
+  border: 2px solid $dark;
+
+  input {
+    border: 0px;
+    outline: 0px;
+    padding: 8px 12px;
+    font-family: $font-family-base;
+    max-width: 44vw;
+
+    @include media-breakpoint-up(sm) {
+      padding: 14px 24px;
+    }
+  }
+
+  button {
+    width: 40px;
+    background-color: $dark;
+    color: $primary;
+
+    @include media-breakpoint-up(sm) {
+      width: 52px;
+    }
+
+    &:hover {
+      color: pink;
+    }
+  }
+}
+
+.mMenu {
+  line-height: 1;
+  background-color: transparent;
+  font-size: 20px;
+  border: 1px solid $dark;
+  border-radius: 4px;
+  width: 44px;
+  text-align: center;
+
+  @include media-breakpoint-up(sm) {
+    width: 52px;
+  }
+
 }
