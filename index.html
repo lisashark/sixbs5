@@ -6,27 +6,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>7TAO活動訂票網</title>
-  <script type="module" crossorigin src="/sixbs5/assets/main-ca6b643d.js"></script>
-  <link rel="stylesheet" href="/sixbs5/assets/main-825f789d.css">
+  <script type="module" crossorigin src="/sixbs5/assets/main-a2bcd337.js"></script>
+  <link rel="stylesheet" href="/sixbs5/assets/main-748371cc.css">
 </head>
 
 <body>
   <header class="header py-sm-4 py-2">
     <div class="container d-flex justify-content-between">
-        <a href="/" class="logo d-flex align-items-center">
-            <div class="imgBox me-3" href="/">
-                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/logo.png?raw=true"
-                    alt="7TAO">
+        <div class="d-flex">
+            <a href="/" class="logo d-flex align-items-center me-4">
+                <div class="imgBox me-lg-3" href="/">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/logo.png?raw=true"
+                        alt="7TAO">
+                </div>
+                <p class="display-4 d-none d-lg-flex align-items-center">7TAO<span
+                        class=" ms-1 fw-bold display-6">活動訂票網</span>
+                </p>
+            </a>
+            <div class="searchBox d-flex align-content-strech ms-lg-4">
+                <input type="text" placeholder="探索活動">
+                <button class="searchBtn"><i class="icofont-search-1"></i></button>
             </div>
-            <p class="display-4 d-none d-sm-flex align-items-center">7TAO<span
-                    class=" ms-1 fw-bold display-6">活動訂票網</span>
-            </p>
-        </a>
-        <div class="searchBox">
-            <input type="text" placeholder="探索活動">
-            <button class="searchBtn"><i class="icofont-search-1"></i></button>
         </div>
-        <section class="memberBtnArea d-sm-flex d-none">
+
+        <section class="memberBtnArea d-lg-flex d-none">
             <a href="/register.html" class="d-flex align-items-center me-4"><i class="icofont-ui-file  me-1"></i>
                 <p>REGISTER</p>
             </a>
@@ -34,11 +37,31 @@
                 <p>LOGIN</p>
             </a>
         </section>
+        <button class="mMenu d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <i class="icofont-navigation-menu"></i>
+        </button>
     </div>
 </header>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
+<div class="offcanvas offcanvas-end p-4" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas-header d-flex justify-content-end">
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item mb-3">
+                <a href="/register.html" class="d-flex align-items-center me-4"><i class="icofont-ui-file  me-1"></i>
+                    <p>REGISTER</p>
+                </a>
+            </li>
+            <li>
+                <a href="/login.html" class="d-flex align-items-center"><i class="icofont-ui-user  me-1"></i>
+                    <p>LOGIN</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
     <header>
 
 
