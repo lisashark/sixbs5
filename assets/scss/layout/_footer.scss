@@ -1,4 +1,8 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.footer {
+  font-size: 14px;
+  font-family: 'Noto Sans TC';
+
+  @include media-breakpoint-up(sm) {
+    font-style: 16px;
+  }
 }

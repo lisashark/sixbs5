@@ -1,10 +1,26 @@
+.row {
+    // --bs-gutter-y: 24px;
+
+    @include media-breakpoint-up(sm) {
+        --bs-gutter-x: 24px;
+        // --bs-gutter-y: 48px;
+    }
+}
+
+date {
+    display: block;
+}
+
 i {
     font-family: Icofont !important;
     font-style: normal;
 }
 
-button {
-    background-color: transparent;
+.ellipsis-3 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
 }
 
 .imgBox {
@@ -16,7 +32,7 @@ button {
     source,
     svg {
         width: 100%;
-        height: auto;
+        height: 100%;
         object-fit: cover;
         object-position: center;
         transition: transform 0.6s ease-in;
@@ -28,5 +44,93 @@ button {
         source {
             transform: scale(1.2) translateY(-3px);
         }
+    }
+}
+
+.fs-base {
+    font-size: $font-size-base;
+}
+
+.fs-sm-base {
+    @include media-breakpoint-up(sm) {
+        font-size: $font-size-base;
+    }
+}
+
+.fs-lg-base {
+    @include media-breakpoint-up(lg) {
+        font-size: $font-size-base;
+    }
+}
+
+.fs-sm-1 {
+    @include media-breakpoint-up(sm) {
+        font-size: $h1-font-size;
+    }
+}
+
+.fs-sm-2 {
+    @include media-breakpoint-up(sm) {
+        font-size: $h2-font-size;
+    }
+}
+
+.fs-sm-3 {
+    @include media-breakpoint-up(sm) {
+        font-size: $h3-font-size;
+    }
+}
+
+.fs-sm-4 {
+    @include media-breakpoint-up(sm) {
+        font-size: $h4-font-size;
+    }
+}
+
+.fs-sm-5 {
+    @include media-breakpoint-up(sm) {
+        font-size: $h5-font-size;
+    }
+}
+
+.fs-sm-6 {
+    @include media-breakpoint-up(sm) {
+        font-size: $h6-font-size;
+    }
+}
+
+.fs-lg-1 {
+    @include media-breakpoint-up(lg) {
+        font-size: $h1-font-size;
+    }
+}
+
+.fs-lg-2 {
+    @include media-breakpoint-up(lg) {
+        font-size: $h2-font-size;
+    }
+}
+
+.fs-lg-3 {
+    @include media-breakpoint-up(lg) {
+        font-size: $h3-font-size;
+    }
+}
+
+.fs-lg-4 {
+    @include media-breakpoint-up(lg) {
+        font-size: $h4-font-size;
+    }
+}
+
+.fs-lg-5 {
+    @include media-breakpoint-up(lg) {
+        font-size: $h5-font-size;
+    }
+}
+
+.fs-lg-6 {
+    @include media-breakpoint-up(lg) {
+        font-size: $h6-font-size;
     }
 }

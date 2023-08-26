@@ -1,14 +1,14 @@
 <header class="header py-sm-4 py-2 border-bottom border-sm-3 border-2">
     <div class="container d-flex justify-content-between">
         <div class="d-flex">
-            <a href="/" class="logo d-flex align-items-center me-4">
+            <a href="./index.html" class="logo d-flex align-items-center me-4">
                 <div class="imgBox me-lg-3" href="/">
                     <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/logo.png?raw=true"
                         alt="7TAO">
                 </div>
-                <p class="display-4 d-none d-lg-flex align-items-center">7TAO<span
-                        class=" ms-1 fw-bold display-6">活動訂票網</span>
-                </p>
+                <h1 class="display-4 d-none d-lg-flex align-items-center">7TAO<span
+                        class=" ms-base fw-bold display-6">活動訂票網</span>
+                </h1>
             </a>
             <div class="searchBox d-flex align-content-strech ms-lg-4">
                 <input type="text" placeholder="探索活動">
@@ -17,15 +17,16 @@
         </div>
 
         <section class="memberBtnArea d-lg-flex d-none">
-            <a href="/register.html" class="d-flex align-items-center me-4"><i class="icofont-ui-file  me-1"></i>
+            <button type="button" class="d-flex align-items-center me-4" data-bs-toggle="modal"
+                data-bs-target="#exampleModal"><i class="icofont-ui-file  me-base"></i>
                 <p>REGISTER</p>
-            </a>
-            <a href="/login.html" class="d-flex align-items-center"><i class="icofont-ui-user  me-1"></i>
+            </button>
+            <a href="#" class="d-flex align-items-center"><i class="icofont-ui-user  me-base"></i>
                 <p>LOGIN</p>
             </a>
         </section>
-        <button class="mMenu d-lg-none ms-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar">
+        <button class="mMenu d-lg-none ms-base" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <i class="icofont-navigation-menu"></i>
         </button>
     </div>
@@ -37,15 +38,36 @@
     <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item mb-3">
-                <a href="/register.html" class="d-flex align-items-center me-4"><i class="icofont-ui-file  me-1"></i>
+                <button type="button" class="d-flex align-items-center me-4 p-0 border border-0" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"><i class="icofont-ui-file  me-base"></i>
                     <p>REGISTER</p>
-                </a>
+                </button>
             </li>
             <li>
-                <a href="/login.html" class="d-flex align-items-center"><i class="icofont-ui-user  me-1"></i>
+                <a href="/login.html" class="d-flex align-items-center"><i class="icofont-ui-user  me-base"></i>
                     <p>LOGIN</p>
                 </a>
             </li>
         </ul>
+    </div>
+</div>
+
+
+<!-- Modal 元件 -->
+<div class="modal fade registerModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header justify-content-center">
+                <h5 class="modal-title fs-5 fw-bold" id="exampleModalLabel">立刻成為7TAO會員</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center pt-5 pb-4">
+                立刻成為七逃會員，加速活動報名流程並取得活動優惠資訊。 您也可以先報名活動，日後再註冊帳號， 系統會在認證您的Email後，協助您找回舊的訂單。
+            </div>
+            <div class="modal-footer pb-5 pb-sm-6 justify-content-center">
+                <button type="button" class="btn btn-dark text-primary">立即成為會員</button>
+            </div>
+        </div>
     </div>
 </div>

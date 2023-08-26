@@ -2,6 +2,13 @@ header {
   button {
     border: 0px;
     outline: 0px;
+    background-color: transparent;
+  }
+}
+
+.offcanvas {
+  button {
+    background-color: transparent;
   }
 }
 
@@ -13,14 +20,17 @@ header {
       width: 53px;
     }
   }
-
-  @include media-breakpoint-up(sm) {}
-
-
 }
 
-.memberBtnArea>a {
+
+.memberBtnArea>a,
+.memberBtnArea>button {
   font-size: 18px;
+  background-color: transparent;
+
+  &:hover {
+    color: $green;
+  }
 }
 
 .searchBox {
@@ -48,7 +58,7 @@ header {
     }
 
     &:hover {
-      color: pink;
+      color: $green;
     }
   }
 }
@@ -64,6 +74,25 @@ header {
 
   @include media-breakpoint-up(sm) {
     width: 52px;
+  }
+}
+
+.registerModal {
+
+  .modal-body {
+    @include media-breakpoint-up(lg) {
+      padding-inline: 102px;
+    }
+
+  }
+
+  .modal-header {
+    position: relative;
+  }
+
+  .btn-close {
+    position: absolute;
+    right: 24px;
   }
 
 }

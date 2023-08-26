@@ -19,6 +19,14 @@
 .typeBtnArea {
   row-gap: 8px;
 
+  .row {
+    --bs-gutter-y: 24px;
+
+    @include media-breakpoint-up(sm) {
+      --bs-gutter-y: 48px;
+    }
+  }
+
 }
 
 .home-typeBtn {
@@ -57,5 +65,204 @@
     h3 {
       color: #FFF !important;
     }
+  }
+}
+
+.recent {
+  .row {
+    --bs-gutter-y: 24px;
+
+    @include media-breakpoint-up(sm) {
+      --bs-gutter-y: 48px;
+    }
+  }
+
+  li>.imgBox {
+    height: 210px;
+    width: 100%;
+
+    @include media-breakpoint-up(sm) {
+      height: 255px;
+    }
+
+  }
+
+  .social {
+    line-height: 1;
+
+    .imgBox {
+      width: 20px;
+
+      @include media-breakpoint-up(sm) {
+        width: 24px;
+      }
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .sell {
+    position: relative;
+
+    &:hover::before {
+      z-index: -1;
+      content: "";
+      left: -12px;
+      width: 29px;
+      height: 29px;
+      background-color: $primary;
+      border-radius: 50%;
+      position: absolute;
+    }
+  }
+}
+
+.online {
+  .imgBox {
+    height: 158px;
+    width: 100%;
+
+    @include media-breakpoint-up(sm) {
+      height: 317px;
+
+      img {
+        object-position: 0% 30%;
+      }
+    }
+  }
+
+  .btn {
+    width: 100%;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 20px;
+    }
+  }
+}
+
+.tagGroup {
+
+  a {
+    border-left: 4px solid;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $dark;
+      border: none;
+      border-left: 4px solid $primary;
+      color: #FFF;
+    }
+  }
+}
+
+.album {
+  .row {
+    --bs-gutter-y: 24px;
+
+    @include media-breakpoint-up(sm) {
+      --bs-gutter-y: 48px;
+    }
+  }
+
+  .titleBar {
+    height: 55px;
+    background-color: $dark;
+    background-image: url('../images/ALBUMS-m.png');
+    background-repeat: repeat-x;
+    background-position: left center;
+
+    @include media-breakpoint-up(sm) {
+      height: 94px;
+      background-image: url('../images/ALBUMS-d.png');
+    }
+  }
+
+  .barBottom {
+    @include media-breakpoint-up(sm) {
+      background-position: -20px center;
+    }
+  }
+
+  .card {
+    position: relative;
+
+    .tag {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -34px) rotate(-4deg);
+      width: fit-content;
+      background-color: #fff;
+    }
+
+    .imgBox {
+      width: 100%;
+      height: 267px;
+
+      @include media-breakpoint-up(sm) {
+        height: 274px;
+      }
+    }
+  }
+
+  .col-sm-6 {
+
+    &:nth-child(2) .card,
+    &:nth-child(4) .card {
+      transform: rotate(2deg);
+    }
+  }
+
+  .col-sm-6 {
+    &:nth-child(3) .card {
+      transform: rotate(-2deg);
+    }
+  }
+}
+
+.contact {
+  font-family: 'Noto Sans TC';
+
+  .contactBntGroup {
+    i {
+      width: 32px;
+      height: 32px;
+    }
+
+    a:hover {
+      color: $green;
+      font-weight: bold;
+    }
+  }
+
+  .col-md-6 {
+    position: relative;
+
+    @include media-breakpoint-between(xs, md) {
+      &:last-child {
+        padding-bottom: 55px;
+        border-left: 2px solid $dark;
+      }
+    }
+  }
+
+  input {
+    font-family: 'Noto Sans TC';
+  }
+
+  .newsletter {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-style: 20px;
+  }
+}
+
+.slogn {
+  p {
+    font-size: 14px;
+    font-family: 'Noto Serif TC';
   }
 }
