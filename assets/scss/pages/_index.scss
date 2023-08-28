@@ -105,6 +105,7 @@
 
   .sell {
     position: relative;
+    font-family: 'Noto Sans TC';
 
     &:hover::before {
       z-index: -1;
@@ -264,5 +265,26 @@
   p {
     font-size: 14px;
     font-family: 'Noto Serif TC';
+  }
+}
+
+//event page
+
+.pageNav {
+  font-family: 'Noto Serif TC';
+
+  ul {
+    row-gap: 12px;
+  }
+
+  .btn:hover,
+  .btn.active {
+    background-color: $dark;
+    color: $primary;
+    border-color: $dark;
+  }
+
+  .btn {
+    height: 100%;
   }
 }

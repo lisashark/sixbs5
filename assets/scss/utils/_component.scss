@@ -47,6 +47,14 @@ i {
     }
 }
 
+
+.hoverText {
+    &:hover {
+        color: $green;
+        font-weight: bold;
+    }
+}
+
 .fs-base {
     font-size: $font-size-base;
 }

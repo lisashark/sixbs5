@@ -148,10 +148,10 @@ $spacers: (
 
 // scss-docs-start container-max-widths
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
+  sm: 100%,
+  md: 100%,
+  lg: 100%,
+  xl: 100%,
   xxl: 1320px
 );
 
@@ -874,7 +874,7 @@ $input-padding-y-lg: $input-btn-padding-y-lg !default;
 $input-padding-x-lg: $input-btn-padding-x-lg !default;
 $input-font-size-lg: $input-btn-font-size-lg !default;
 
-$input-bg: $body-bg !default;
+$input-bg: transparent;
 $input-disabled-color: #878787;
 $input-disabled-bg: $body-bg;
 $input-disabled-border-color: #C96464;

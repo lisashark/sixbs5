@@ -42,6 +42,7 @@ header {
     padding: 8px 12px;
     font-family: $font-family-base;
     max-width: 44vw;
+    background-color: transparent;
 
     @include media-breakpoint-up(sm) {
       padding: 14px 24px;
